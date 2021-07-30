@@ -17,7 +17,7 @@ export default function Home() {
     let resArray1=[]
     
    let [defaultArrSize,setdefaultArrSize]=useState(20)
-
+    
 
    let addpages=(val)=>{
 
@@ -55,7 +55,7 @@ export default function Home() {
 
     return(
 <Container ><Row>
-       <div style={{margin:"1rem 0.5rem"}} className="StoryDiv" >
+       <div style={{margin:"0rem 0.5rem"}} className="StoryDiv" >
         {
             allIds?.length >0 &&
             allIds?.map((id,index)=>{ return (
@@ -68,7 +68,6 @@ export default function Home() {
         
         </div>
         </Row>
-        {/* <button onClick={()=>setdefaultArrSize(defaultArrSize+10)}>More</button> */}
         <button type="button" class="btn btn-secondary" id="btnnn" onClick={()=>setdefaultArrSize(defaultArrSize+10)}>More</button>
         </Container>
     )

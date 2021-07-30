@@ -18,28 +18,21 @@ const SingleHome = ({id}) => {
         <>
         {
             id && 
-            <div style={{border: "1px solid black",borderRadius:"10px"}} className="ItemSingleDiv">
-            {/* <p>Id: {sData.id}</p> */}
+            <div className="ItemSingleDiv">
+           
             <a href="#" style={{textDecoration:"none" , color:"black"}} ><BsFillCaretUpFill /> </a>
             <a href="#" style={{textDecoration:"none" }} >    <BsFillCaretDownFill style={{marginRight:"18px"}}/> </a>
             <a href={sData.url}
                 className="LinkClicked" style={{textDecoration: "none"}}>
             {sData.title}
             </a>
-           
-            {/* <p>Type : {sData.type}</p> */}
-            <p className="SingleDataPara"> by <span style={{fontWeight:"bold",color:"#F6AE99"}}> {sData.by} </span> 
-            {/* <span style={{marginLeft:"30px"}}>  descendants : {sData.descendants}
-            </span>  */}
+        
+            <p className="SingleDataPara" ><b>By </b> : <span style={{fontWeight:"bold",color:"#0A1931"}}> {sData.by} </span> 
+         
             </p>
          
-            {/* <p className="SingleDataPara"> score : {sData.score}
-             <span style={{marginLeft:"30px"}}>  TIME : { sData.time}</span> 
-             </p> */}
-            {/* <p className="SingleDataPara">TEXT : {sData.text} </p> */}
-            {/* <p>TIME : {Math.floor((sData.time / (1000 * 60 * 60)) % 24)}</p> */}
            
-            {/* <div>keys : {sData.kids.map((e) => (<h1>{e}</h1>))}</div> */}
+        
         </div>
         }
 
