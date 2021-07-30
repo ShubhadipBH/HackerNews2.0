@@ -8,7 +8,9 @@ import { Button } from 'bootstrap';
 
 export default function Home() {
    
-     let TestforGit= 0
+     let TestforGit= "TEST GIT"
+
+     
     let [allIds,setallIds]=useState([])
     
     let resArray=[]
