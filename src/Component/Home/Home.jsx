@@ -69,7 +69,7 @@ export default function Home() {
         </div>
         </Row>
         {/* <button onClick={()=>setdefaultArrSize(defaultArrSize+10)}>More</button> */}
-        <button type="button" class="btn btn-secondary" onClick={()=>setdefaultArrSize(defaultArrSize+10)}>More</button>
+        <button type="button" class="btn btn-secondary" id="btnnn" onClick={()=>setdefaultArrSize(defaultArrSize+10)}>More</button>
         </Container>
     )
 }
