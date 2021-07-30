@@ -20,7 +20,7 @@ export default function Routes() {
                                     <Route path="/Registration" component={Registration}></Route>
                                     <Route path="/me/:id" component={SingleHome}/>
                         </Switch>
-
+<Footer/>
                 </Router>
         </div>
     )
